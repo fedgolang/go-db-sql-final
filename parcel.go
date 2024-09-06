@@ -30,7 +30,6 @@ func (s ParcelStore) Add(p Parcel) (int, error) {
 
 	// верните идентификатор последней добавленной записи
 	return int(id), nil
-	return int(id), nil
 }
 
 func (s ParcelStore) Get(number int) (Parcel, error) {

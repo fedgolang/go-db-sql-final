@@ -169,13 +169,10 @@ func TestGetByClient(t *testing.T) {
 	// get by client
 	storedParcels, err := store.GetByClient(client) // получите список посылок по идентификатору клиента, сохранённого в переменной client 6808088
 
-	storedParcels, err := store.GetByClient(client) // получите список посылок по идентификатору клиента, сохранённого в переменной client 6808088
-
 	// убедитесь в отсутствии ошибки
 	require.NoError(t, err)
 
 	// убедитесь, что количество полученных посылок совпадает с количеством добавленных
-	require.Equal(t, len(parcels), len(storedParcels))
 	require.Equal(t, len(parcels), len(storedParcels))
 
 	// check
